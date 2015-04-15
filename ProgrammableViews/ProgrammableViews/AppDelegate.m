@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,19 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CGRect viewRect = [[UIScreen mainScreen]bounds];
-    //create a UIWindow via code and allocate memory of it.
-    self.window = [[UIWindow alloc]initWithFrame:viewRect];
+    NSLog(@"Launched from AppDelegate");
     // Override point for customization after application launch.
-    [self.window makeKeyAndVisible];
-    //create a view controller
-    //creating the view
-    UIView *colourView = [[UIView alloc]initWithFrame:viewRect];
-    
-    self.viewController = [[ViewController alloc]init];
-    colourView.backgroundColor = [UIColor blueColor];
-    self.viewController.view = colourView;
-    self.window.rootViewController = self.viewController;
     return YES;
 }
 

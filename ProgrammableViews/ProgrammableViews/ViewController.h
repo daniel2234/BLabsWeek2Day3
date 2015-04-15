@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  ProgrammableViews
 //
 //  Created by Daniel Kwiatkowski on 2015-04-15.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ViewController : UIViewController
 
 
 @end
